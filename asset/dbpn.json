@@ -1,0 +1,210 @@
+{
+    "productos": [
+        {
+            "id": 1,
+            "producto": "disco WD blue 1TB 7200 RPM",
+            "stock": 5,
+            "caracteristicas": "coneccion Sata, disco mecanico, capacidad 1TB, tasa de transferenca 60 gb/s, velocidad 7200 rpm, memoria cache 64 mb, factor 35", 
+            "precio lista": "$6700",
+            "efectivo": "$5600",
+            "foto": "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=501&useDensity=true&width=1366&height=625&tipoEscala=contain"
+
+        },
+        
+        {
+            "id": 2,
+            "producto": "ssd Gigabite 240 gb",
+            "stock": 10,
+            "caracteristicas": "Tipo de coneccion SATA, 240 GB , tasa de transferencia 6 GB/s, velocicad de lectura secuencial 500 MB/s", 
+            "precio lista": "$6100",
+            "efectivo": "$4800",
+            "foto": "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=49&useDensity=true&width=1366&height=625&tipoEscala=contain"
+        },
+
+        {
+            "id": 3,
+            "producto": "Motherboard ASUS Prime A320M-K",
+            "stock": 6,
+            "caracteristicas": "Tarjeta madre AMD AM4 uATX con iluminación LED, DDR4 3200MHz, 32Gb/s M.2, HDMI, SATA 6Gb/s, USB 3.0", 
+            "precio lista": "$8900",
+            "efectivo": "$7000",
+            "foto": "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=529&useDensity=true&width=1366&height=625&tipoEscala=contain"
+        },
+
+        {
+            "id": 4,
+            "producto": "Fuente Deepcool DE600",
+            "stock": 4,
+            "caracteristicas": "Cumple con Intel ATX 12V V2.4.  Ventilador silencioso de 120 mm con capacidad PWM.  Salida de +12V de un solo canal.",                                                                    
+            "precio lista": "$6400",
+            "efectivo": "$5000",
+            "foto": "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=683&useDensity=true&width=1366&height=625&tipoEscala=contain"
+        },
+
+        {
+            "id": 5,
+            "producto": "Teclado Mecanico Redragon KUMARA White K552RGB Switch Blue",
+            "stock": 5,
+            "caracteristicas": "El Kumara es un teclado mecánico TKL súper aclamado, compacto y ampliamente funcional. Es virtualmente irrompible y tiene una durabilidad extraordinaria gracias a que su estructura está reforzada con acero.", 
+            "precio lista": "$10240",
+            "efectivo": "$8000",
+            "foto": "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=1765&useDensity=true&width=1366&height=625&tipoEscala=contain"
+        },
+
+        {
+            "id": 6,
+            "producto": "SSD CRUCIAL 240 GB BX500",
+            "stock": 10,
+            "caracteristicas": "tipo de conexion SATA, tipo de disco solido, capacidad 240 gb, tasa de transferencia 6 GB", 
+            "precio lista": "$6000",
+            "efectivo": "$4700",
+            "foto": "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=71&useDensity=true&width=1366&height=625&tipoEscala=contain"
+        },
+
+        {
+            "id": 7,
+            "producto": "Memoria HyperX Fury RGB Black DDR4 16GB 3200Mhz",
+            "stock": 10,
+            "caracteristicas": "capacidad 16 gb, velocidad 3600 Mhz,tipo ddr 4, cantidad de memorias 1 ", 
+            "precio lista": "$17900",
+            "efectivo": "$14000",
+            "foto": "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=1727&useDensity=true&width=1366&height=625&tipoEscala=contain"
+        },
+
+        {
+            "id": 8,
+            "producto": "Combo Logitech MK220",
+            "stock": 5,
+            "caracteristicas": "teclado compacto e inalambrico. Mouse ambidiestro inalambrico", 
+            "precio lista": "$3473",
+            "efectivo": "$2417",
+            "foto": "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=733&useDensity=true&width=1366&height=625&tipoEscala=contain"
+        },
+
+        {
+            "id": 9,
+            "producto": "Joystick Redragon Harrow G808",
+            "stock": 8,
+            "caracteristicas": "Preparado para el gaming mas exigente, alta durabilidad y performance", 
+            "precio lista": "$4864",
+            "efectivo": "$3800",
+            "foto": "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=251&useDensity=true&width=1366&height=625&tipoEscala=contain"
+        },        
+
+        {
+            "id": 10,
+            "producto": "Gabinete Phanteks Enthoo Evolv X",
+            "stock": 6,
+            "caracteristicas": "Dimensiónes 240 mm x 520 mm x 510 mm , 9,45 pulg. x 20,5 pulg. x 20,1 pulg. Chasis semitorre. materiales:Paneles de aluminio anodizado,Chasis de acero con recubrimiento en polvo. Paneles laterales de vidrio templado", 
+            "precio lista": "44800",
+            "efectivo": "35000",
+            "foto": "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=769&useDensity=true&width=1366&height=625&tipoEscala=contain"
+        }
+
+
+
+    ]
+}    
+
+
+
+
+
+
+
+
+
+
+
+
+         
+
+
+
+
+
+
+
+
+        
+
+
+            
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
