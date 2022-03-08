@@ -1,10 +1,12 @@
 import React from 'react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import * as style from "./style";
 
 const NavBar = () => {
     const [Open, setOpen] = useState(false);
     return (
-        <div className="flex items-center justify-between border-b border-gray-400 py-2 bg-black">
+        <div className="flex items-center justify-between border-b border-gray-400 py-2 bg-black fixed w-screen">
           <a href="/">
             <img src="#" alt="logo" className='' />
           </a>
@@ -38,22 +40,22 @@ const NavBar = () => {
                   </svg>
                 </div>
                 <ul className="flex flex-col items-center justify-between min-h-[250px]">
-                  <li className="border-b border-orange-400 my-8 uppercase text-orange-600 hover:text-orange-700 ">
+                  <li className={style.NAVBAR_INTEMS}>
                     <a href="#">INICIO</a>
                   </li>
-                  <li className="border-b border-orange-400 my-8 uppercase text-orange-600 hover:text-orange-700">
+                  <li className={style.NAVBAR_INTEMS} >
                     <a href="#">PRUDUCTOS</a>
                   </li>
-                  <li className="border-b border-gray-400 my-8 uppercase border-orange-400 my-8 uppercase text-orange-600 hover:text-orange-700">
+                  <li className={style.NAVBAR_INTEMS} >
                     <a href="#">REFRAGON</a>
                   </li>
-                  <li className="border-b border-gray-400 my-8 uppercase border-orange-400 my-8 uppercase text-orange-600 hover:text-orange-700 ">
+                  <li className={style.NAVBAR_INTEMS} >
                     <a href="#">OFERTA DEL DIA</a>
                   </li>
-                  <li className="border-b border-gray-400 my-8 uppercase border-orange-400 my-8 uppercase text-orange-600 hover:text-orange-700 ">
+                  <li className={style.NAVBAR_INTEMS}>
                     <a href="#">CONTACTO</a>
                   </li>
-                  <li className="text-slate-50 text-sm border px-4 py-2 rounded-lg hover:border-orange-600 hover:text-orange-600 ">
+                  <li className={style.BOTON_ACCESOCLIENTES}>
                     <a href="#">ACCESO CLIENTES</a>
                   </li>
                 </ul>
@@ -61,22 +63,22 @@ const NavBar = () => {
             </section>
     
             <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
-              <li className='my-8 uppercase text-orange-600 hover:text-slate-50 hover:bg-gray-500 hover:px-4 py-3' >
-                <a href="#">INICIO</a>
+              <li className={style.NAVBAR_MOBILE}>
+                <Link to="/">INICIO</Link>
               </li>
-              <li className='my-8 uppercase text-orange-600 hover:text-slate-50 hover:bg-gray-500 hover:px-4 py-3' >
-                <a href="#">PORDUCTOS</a>
+              <li className={style.NAVBAR_MOBILE} >
+                <Link to="Productos">PORDUCTOS</Link>
               </li>
-              <li className='my-8 uppercase text-orange-600 hover:text-slate-50 hover:bg-gray-500 hover:px-4 py-3' >
+              <li className={style.NAVBAR_MOBILE} >
                 <a href="#">REDRAGON</a>
               </li>
-              <li className='my-8 uppercase text-orange-600 hover:text-slate-50 hover:bg-gray-500 hover:px-4 py-3' >
+              <li className={style.NAVBAR_MOBILE} >
                 <a href="#">OFERTA DEL DIA</a>
               </li>
-              <li className='my-8 uppercase text-orange-600 hover:text-slate-50 hover:bg-gray-500 hover:px-4 py-3' >
+              <li className={style.NAVBAR_MOBILE} >
                 <a href="#">CONTACTO</a>
               </li>
-              <li className='my-8 uppercase text-slate-50 hover:text-orange-700 hover:px-4 py-3 border px-4 py-2 rounded-lg hover:border-orange-600' >
+              <li className={style.BOTON_ACCESOCLIENTES1}>
                 <a href="#">ACCESO CLIENTES</a>
               </li>
             </ul>
