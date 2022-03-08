@@ -1,11 +1,12 @@
 import React from 'react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import * as style from "./style";
 
 const NavBar = () => {
     const [Open, setOpen] = useState(false);
     return (
-        <div className="flex items-center justify-between border-b border-gray-400 py-2 bg-black">
+        <div className="flex items-center justify-between border-b border-gray-400 py-2 bg-black fixed w-screen">
           <a href="/">
             <img src="#" alt="logo" className='' />
           </a>
@@ -63,10 +64,10 @@ const NavBar = () => {
     
             <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
               <li className={style.NAVBAR_MOBILE}>
-                <a href="#">INICIO</a>
+                <Link to="/">INICIO</Link>
               </li>
               <li className={style.NAVBAR_MOBILE} >
-                <a href="#">PORDUCTOS</a>
+                <Link to="Productos">PORDUCTOS</Link>
               </li>
               <li className={style.NAVBAR_MOBILE} >
                 <a href="#">REDRAGON</a>

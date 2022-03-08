@@ -1,11 +1,11 @@
 import React from 'react';
-import Header from './Components/Header';
+import Ruter from './Components/Ruter';
 
 
 function App() {
   return (
     <div>
-      <Header/>
+      <Ruter/>
     </div>
   );
 }

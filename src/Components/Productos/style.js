@@ -1,0 +1,1 @@
+export const Barrita = "bg-orange-600 text-white border border-2 border-white p-2 hover:bg-orange-700 md:w-64 lg:w-64 xl:w-64"
