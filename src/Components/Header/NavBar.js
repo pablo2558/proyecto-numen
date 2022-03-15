@@ -7,8 +7,8 @@ const NavBar = () => {
     const [Open, setOpen] = useState(false);
     return (
         <div className="flex items-center justify-between border-b border-gray-400 py-2 bg-black fixed w-screen">
-          <a href="/">
-            <img src="#" alt="logo" className='' />
+          <a href="https://cvws.icloud-content.com/B/AddnqMrGpC1TT9g_qfmiWlCIILCtAbTIQK73xKZJzMaDxkK4E4WnDLKP/logo4.jpg?o=AvHUUqd0TOKqoXa7KhVEzwYDPanBJLOD-kNnFu8r_axS&v=1&x=3&a=CAogubjzMwU-EJodUpvbzHAgU42oh3UKGFhtgY29sj8BATMSbxCzjPn_9i8Y04OwgPcvIgEAUgSIILCtWgSnDLKPaie0N5ObWYz-qxH0gTIkcsdHg9C0M_8kZ1Caoh_ffuFZ5f4ffoVtbg9yJ__-SdLB_rE_r_zd708aQcdbxilZMT5AKjerYS4XboV4GXtbB98Ewg&e=1646852309&fl=&r=dcd00976-74e7-47eb-a2eb-280030e23a8e-1&k=tV0Dwus1CH7O2K8_-w1Myw&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=46&s=Cfzzip6a8667Hp5WA6aXaPsM73Q&cd=i">
+            <img src="https://cvws.icloud-content.com/B/AddnqMrGpC1TT9g_qfmiWlCIILCtAbTIQK73xKZJzMaDxkK4E4WnDLKP/logo4.jpg?o=AvHUUqd0TOKqoXa7KhVEzwYDPanBJLOD-kNnFu8r_axS&v=1&x=3&a=CAogubjzMwU-EJodUpvbzHAgU42oh3UKGFhtgY29sj8BATMSbxCzjPn_9i8Y04OwgPcvIgEAUgSIILCtWgSnDLKPaie0N5ObWYz-qxH0gTIkcsdHg9C0M_8kZ1Caoh_ffuFZ5f4ffoVtbg9yJ__-SdLB_rE_r_zd708aQcdbxilZMT5AKjerYS4XboV4GXtbB98Ewg&e=1646852309&fl=&r=dcd00976-74e7-47eb-a2eb-280030e23a8e-1&k=tV0Dwus1CH7O2K8_-w1Myw&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=46&s=Cfzzip6a8667Hp5WA6aXaPsM73Q&cd=i" alt="logo" />
           </a>
           <nav className=''>
             <section className="MOBILE-MENU flex lg:hidden">
@@ -76,7 +76,7 @@ const NavBar = () => {
                 <a href="#">OFERTA DEL DIA</a>
               </li>
               <li className={style.NAVBAR_MOBILE} >
-                <a href="#">CONTACTO</a>
+                <Link to="Contacto">CONTACTO</Link>
               </li>
               <li className={style.BOTON_ACCESOCLIENTES1}>
                 <a href="#">ACCESO CLIENTES</a>

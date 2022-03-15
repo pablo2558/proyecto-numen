@@ -4,6 +4,7 @@ import OfertaProducto from './OfertaProducto';
 import ProductosDestacados from './ProductosDestacados';
 import Servicios from './Servicios';
 
+
 const Main = () => {
   return (
     <div className="lg:pt-20">
@@ -20,6 +21,7 @@ const Main = () => {
       <OfertaProducto/>
       <ProductosDestacados/>
       <Servicios/>
+      
     </div>
   );
 }
