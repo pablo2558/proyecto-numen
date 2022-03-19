@@ -1,0 +1,1 @@
+export const Style_Table = "border-x-4 border-y-4"

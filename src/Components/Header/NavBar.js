@@ -78,6 +78,9 @@ const NavBar = () => {
               <li className={style.NAVBAR_MOBILE} >
                 <a href="#">CONTACTO</a>
               </li>
+              <li className={style.NAVBAR_MOBILE} >
+                <Link to="Carrito">CARRITO</Link>
+              </li>
               <li className={style.BOTON_ACCESOCLIENTES1}>
                 <a href="#">ACCESO CLIENTES</a>
               </li>

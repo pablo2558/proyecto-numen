@@ -1,5 +1,6 @@
 import React from 'react'
-import ModeloTarjeta from './ModeloTarjeta'
+import Tarjeta from './Tarjeta'
+
 
 const ProductosDestacados = () => {
   return (
@@ -14,8 +15,8 @@ const ProductosDestacados = () => {
        <p className='text-white'>PRODUCTOS DESTACADOS</p>
     </div>
     <div className='flex justify-evenly flex-wrap'>
-       <ModeloTarjeta/>
-       <ModeloTarjeta/>
+       <Tarjeta/>
+       <Tarjeta/>
     </div>
     </div>
   )
