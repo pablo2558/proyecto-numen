@@ -5,6 +5,7 @@ import { shoppingReducer, shoppingInitialState } from './shoppingReducer';
 import Product from './Product';
 import CartItems from './CartItems';
 import axios from 'axios';
+import { data } from 'autoprefixer';
 
 
 const ShoppingCart = () => {
@@ -26,15 +27,71 @@ const ShoppingCart = () => {
     }, [])
     
 
-    const addToCart = (id) => {
-      dispatch({type: TYPES.ADD_TO_CART,  payload: id})
+    const addToCart = async (data) => {
+
+      let newItem = state.products.find(product => product.id === data.id)
+
+      let itemInCart = state.cart.find((item) => item.id === newItem.id)
+
+      if (itemInCart) {
+        let endpoint = `http://localhost:3000/cart/${data.id}`
+        let options = {
+          method: "PUT",
+          headers: {"content-type": "application/json"},
+          data: JSON.stringify({...data, quantity: itemInCart.quantity + 1})
+        }
+        let res = await axios(endpoint, options),
+            itemData = await res.data
+    
+        dispatch({type: TYPES.ADD_TO_CART, payload: {itemData}})    
+      } else {
+          let options = {
+            method: "POST",
+            headers: {"content-type": "application/json"},
+            data: JSON.stringify({...data, quantity: 1})
+          }
+          let res = await axios("http://localhost:3000/cart", options),
+              itemData = await res.data
+    
+          dispatch({type: TYPES.ADD_TO_CART,  payload: {itemData}})
+      }     
     };
 
-    const deleteFromCart = (id, all = false) => {
+    const deleteFromCart = async (data, all = false) => {
       if (all) {
-        dispatch({type:TYPES.REMOVE_ALL_PRODUCTS, payload: id});
+        let endpoint = `http://localhost:3000/cart/${data.id}`
+
+        let options = {
+          method: "DELETE",
+          headers: {"content-type": "application/json"}
+        };
+        let res = await axios(endpoint, options)
+
+        dispatch({type:TYPES.REMOVE_ALL_PRODUCTS, payload: data.id});
       } else {
-        dispatch({type: TYPES.REMOVE_ONE_PRODUCT, payload: id});
+        let itemInCart = state.cart.find((item) => item.id === data.id)
+        
+        if (itemInCart.quantity > 1) {
+          let endpoint = `http://localhost:3000/cart/${data.id}`
+          let options = {
+            method: "PUT",
+            headers: {"content-type": "application/json"},
+            data: JSON.stringify({...data, quantity: itemInCart.quantity - 1})
+          }
+          let res = await axios(endpoint, options),
+            itemData = await res.data
+            
+            dispatch({type: TYPES.REMOVE_ONE_PRODUCT, payload: data.id});
+        } else {
+          let endpoint = `http://localhost:3000/cart/${data.id}`
+
+          let options = {
+            method: "DELETE",
+            headers: {"content-type": "application/json"}
+          };
+          let res = await axios(endpoint, options)
+          dispatch({type: TYPES.REMOVE_ONE_PRODUCT, payload: data.id});
+        }
       }
     };
 

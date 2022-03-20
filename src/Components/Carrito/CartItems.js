@@ -19,9 +19,8 @@ const CartItems = ({data, deleteFromCart, addToCart}) => {
       </table>
       {/* <h4> {name} </h4>
       <h5>$ {price}.00 x {quantity} total ${price * quantity}.00</h5> */}
-      <button onClick={() => deleteFromCart(id)} className='border border-white rounded-lg px-4 text-white font-semibold mt-6 mb-6 bg-orange-600 hover:bg-orange-700 '>Eliminar uno</button>
-      <button onClick={() => deleteFromCart(id, true)} className='border border-white rounded-lg px-4 text-white font-semibold mt-6 mb-6 bg-orange-600 hover:bg-orange-700'>Eliminar todos</button>
-      <button onClick={() => addToCart(id)} className='border border-white rounded-lg px-4 text-white font-semibold mt-6 mb-6 bg-orange-600 hover:bg-orange-700'>Agregar</button>
+      <button onClick={() => deleteFromCart(data)} className='border border-white rounded-lg px-4 text-white font-semibold mt-6 mb-6 bg-orange-600 hover:bg-orange-700 '>Eliminar uno</button>
+      <button onClick={() => deleteFromCart(data, true)} className='border border-white rounded-lg px-4 text-white font-semibold mt-6 mb-6 bg-orange-600 hover:bg-orange-700'>Eliminar todos</button>
     </div>
   );
 }

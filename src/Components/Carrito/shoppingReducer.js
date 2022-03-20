@@ -15,7 +15,7 @@ export function shoppingReducer(state, action) {
           }
         }
         case TYPES.ADD_TO_CART: {
-            let newItem = state.products.find((product) => product.id === action.payload);
+            let newItem = state.products.find((product) => product.id === action.payload.itemData.id);
               let itemInCart = state.cart.find((item) => item.id === newItem.id);
         
               return itemInCart
@@ -29,7 +29,7 @@ export function shoppingReducer(state, action) {
                   }
                 : {
                     ...state,
-                    cart: [...state.cart, { ...newItem, quantity: 1 }],
+                    cart: [...state.cart, { ...action.payload.itemData, quantity: 1 }],
                   };
         }
         case TYPES.REMOVE_ONE_PRODUCT: {
