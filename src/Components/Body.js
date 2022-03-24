@@ -1,12 +1,12 @@
 import React from 'react'
-import ShoppingCart from './Carrito/ShoppingCart'
+import ProductMap from './Carrito/ProductMap'
 import Main from './Main/Main'
 
 const Body = () => {
   return (
     <div>
         <Main/>
-        <ShoppingCart/>
+        <ProductMap />
     </div>
   )
 }

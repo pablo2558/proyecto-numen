@@ -26,5 +26,24 @@
       "price": 200
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": 3,
+      "name": "Producto C",
+      "price": 100,
+      "quantity": 1
+    },
+    {
+      "id": 2,
+      "name": "Producto B",
+      "price": 50,
+      "quantity": 1
+    },
+    {
+      "id": 1,
+      "name": "Producto A",
+      "price": 10,
+      "quantity": 1
+    }
+  ]
 }

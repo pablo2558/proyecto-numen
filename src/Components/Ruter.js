@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Body from './Body'
-import ShoppingCart from './Carrito/ShoppingCart'
+import CartMap from './Carrito/CartMap'
 import NavBar from './Header/NavBar'
 import Porductos from './Productos/Porductos'
 
@@ -13,7 +13,7 @@ const Ruter = () => {
           <Routes>
               <Route path='/' element={<Body/>}/>
               <Route path='Productos' element={<Porductos/>}/>
-              <Route path='Carrito' element={<ShoppingCart/>}/>
+              <Route path='Carrito' element={<CartMap/>}/>
           </Routes>
       </Router>
     </div>

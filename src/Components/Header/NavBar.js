@@ -6,87 +6,112 @@ import * as style from "./style";
 const NavBar = () => {
     const [Open, setOpen] = useState(false);
     return (
-        <div className="flex items-center justify-between border-b border-gray-400 py-2 bg-black fixed w-screen">
-          <a href="/">
-            <img src="#" alt="logo" className='' />
-          </a>
-          <nav className=''>
-            <section className="MOBILE-MENU flex lg:hidden">
+      <div className="flex items-center justify-between border-b border-gray-400 py-2 bg-black fixed w-screen">
+        <a href="/">
+          <img src="#" alt="logo" className="" />
+        </a>
+        <nav className="">
+          <section className="MOBILE-MENU flex lg:hidden">
+            <div
+              className="HAMBURGER-ICON space-y-2"
+              onClick={() => setOpen((el) => !el)}
+            >
+              <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+              <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+              <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+            </div>
+
+            <div className={Open ? "showMenuNav" : "hideMenuNav"}>
               <div
-                className="HAMBURGER-ICON space-y-2"
-                onClick={() => setOpen((el) => !el)}
+                className="absolute top-0 right-0 px-8 py-8"
+                onClick={() => setOpen(false)}
               >
-                <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-                <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-                <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-              </div>
-    
-              <div className={Open ? "showMenuNav" : "hideMenuNav"}>
-                <div
-                  className="absolute top-0 right-0 px-8 py-8"
-                  onClick={() => setOpen(false)}
+                <svg
+                  className="h-8 w-8 text-gray-600"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
-                  <svg
-                    className="h-8 w-8 text-gray-600"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <line x1="18" y1="6" x2="6" y2="18" className='' />
-                    <line x1="6" y1="6" x2="18" y2="18" />
-                  </svg>
-                </div>
-                <ul className="flex flex-col items-center justify-between min-h-[250px]">
-                  <li className={style.NAVBAR_INTEMS}>
-                    <a href="#">INICIO</a>
-                  </li>
-                  <li className={style.NAVBAR_INTEMS} >
-                    <a href="#">PRUDUCTOS</a>
-                  </li>
-                  <li className={style.NAVBAR_INTEMS} >
-                    <a href="#">REFRAGON</a>
-                  </li>
-                  <li className={style.NAVBAR_INTEMS} >
-                    <a href="#">OFERTA DEL DIA</a>
-                  </li>
-                  <li className={style.NAVBAR_INTEMS}>
-                    <a href="#">CONTACTO</a>
-                  </li>
-                  <li className={style.BOTON_ACCESOCLIENTES}>
-                    <a href="#">ACCESO CLIENTES</a>
-                  </li>
-                </ul>
+                  <line x1="18" y1="6" x2="6" y2="18" className="" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
               </div>
-            </section>
-    
-            <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
-              <li className={style.NAVBAR_MOBILE}>
-                <Link to="/">INICIO</Link>
-              </li>
-              <li className={style.NAVBAR_MOBILE} >
-                <Link to="Productos">PORDUCTOS</Link>
-              </li>
-              <li className={style.NAVBAR_MOBILE} >
-                <a href="#">REDRAGON</a>
-              </li>
-              <li className={style.NAVBAR_MOBILE} >
-                <a href="#">OFERTA DEL DIA</a>
-              </li>
-              <li className={style.NAVBAR_MOBILE} >
-                <a href="#">CONTACTO</a>
-              </li>
-              <li className={style.NAVBAR_MOBILE} >
-                <Link to="Carrito">CARRITO</Link>
-              </li>
-              <li className={style.BOTON_ACCESOCLIENTES1}>
-                <a href="#">ACCESO CLIENTES</a>
-              </li>
-            </ul>
-          </nav>
-          <style>{`
+              <ul className="flex flex-col items-center justify-between min-h-[250px]">
+                <li className={style.NAVBAR_INTEMS}>
+                  <Link to="/">INICIO</Link>
+                </li>
+                <li className={style.NAVBAR_INTEMS}>
+                  <Link to="Productos">PRODUCTOS</Link>
+                </li>
+                <li className={style.NAVBAR_INTEMS}>
+                  <a href="#">REFRAGON</a>
+                </li>
+                <li className={style.NAVBAR_INTEMS}>
+                  <a href="#">OFERTA DEL DIA</a>
+                </li>
+                <li className={style.NAVBAR_INTEMS}>
+                  <a href="#">CONTACTO</a>
+                </li>
+                <li className={style.NAVBAR_INTEMS}>
+                  <Link to="Carrito">
+                  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-cart"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg>
+                  </Link>
+                </li>
+                <li className={style.BOTON_ACCESOCLIENTES}>
+                  <a href="#">ACCESO CLIENTES</a>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
+            <li className={style.NAVBAR_MOBILE}>
+              <Link to="/">INICIO</Link>
+            </li>
+            <li className={style.NAVBAR_MOBILE}>
+              <Link to="Productos">PORDUCTOS</Link>
+            </li>
+            <li className={style.NAVBAR_MOBILE}>
+              <a href="#">REDRAGON</a>
+            </li>
+            <li className={style.NAVBAR_MOBILE}>
+              <a href="#">OFERTA DEL DIA</a>
+            </li>
+            <li className={style.NAVBAR_MOBILE}>
+              <a href="#">CONTACTO</a>
+            </li>
+            <li className={style.NAVBAR_MOBILE}>
+              <Link to="Carrito">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-cart"
+                  viewBox="0 0 16 16"
+                >
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg>
+              </Link>
+            </li>
+            <li className={style.BOTON_ACCESOCLIENTES1}>
+              <a href="#">ACCESO CLIENTES</a>
+            </li>
+          </ul>
+        </nav>
+        <style>{`
           .hideMenuNav {
             display: none;
           }
@@ -105,8 +130,8 @@ const NavBar = () => {
             align-items: center;
           }
         `}</style>
-        </div>
-      );
+      </div>
+    );
     }
  
 export default NavBar;

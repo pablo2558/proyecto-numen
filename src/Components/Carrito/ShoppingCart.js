@@ -2,13 +2,12 @@ import React from 'react'
 import { TYPES } from './ShoppingActions'
 import { useReducer, useEffect } from 'react';
 import { shoppingReducer, shoppingInitialState } from './shoppingReducer';
-import Product from './Product';
-import CartItems from './CartItems';
 import axios from 'axios';
-import { data } from 'autoprefixer';
+import { createContext,  } from 'react';
 
+export const CartContainer = createContext();
 
-const ShoppingCart = () => {
+const ShoppingCart = ({children}) => {
     const [state, dispatch] = useReducer(shoppingReducer, shoppingInitialState);
     const {products, cart} = state
 
@@ -98,22 +97,11 @@ const ShoppingCart = () => {
     const clearCart = () => {
       dispatch({type: TYPES.CLEAR_CART})
     };
-
   return (
     <div>
-        <h2>Carritos de compras</h2>
-        <h3>Productos</h3>
-        <div>
-            {products.map(product => <Product key={product.id} data={product} addToCart={addToCart}/>)}
-        </div>
-        <br/>
-        <hr/>
-        <h3>Carrito</h3>
-        <div>
-           {cart.map((item, index)=> <CartItems key={index} data={item} deleteFromCart={deleteFromCart} addToCart={addToCart}/>)}
-        </div>
-        <button onClick={clearCart}>Limpiar Carrito</button>
-        <h2>Total: </h2>
+      <CartContainer.Provider value={{cart, products, addToCart, deleteFromCart, clearCart}}>
+        {children}
+      </CartContainer.Provider>
     </div>
   )
 }
