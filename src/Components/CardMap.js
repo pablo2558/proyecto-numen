@@ -1,6 +1,7 @@
 import React from 'react'
-import Card from './Card';
 import ModeloTarjeta from './Productos/ModeloTarjeta';
+import Gabinete1 from "../Components/asset/Imagenes/Gabinete Phanteks ECLIPSE.png";
+import Imagen1 from "../Components/asset/Imagenes/Imagen1.png";
 
 const cards = [
   {
@@ -11,7 +12,7 @@ const cards = [
       "coneccion Sata, disco mecanico, capacidad 1TB, tasa de transferenca 60 gb/s, velocidad 7200 rpm, memoria cache 64 mb, factor 35",
     precioLista: 6700,
     efectivo: 5600,
-    foto: "",
+    foto: Imagen1
   },
 
   {
@@ -22,7 +23,7 @@ const cards = [
       "Tipo de coneccion SATA, 240 GB , tasa de transferencia 6 GB/s, velocicad de lectura secuencial 500 MB/s",
     precioLista: 6100,
     efectivo: 4800,
-    foto: "https://www.aletecno.com.ar/wp-content/uploads/2018/06/disco-rigido-1tb-wd.jpg",
+    foto: "src/Components/asset/Imagenes/Imagen1.png"
   },
 
   {
@@ -33,7 +34,7 @@ const cards = [
       "Tarjeta madre AMD AM4 uATX con iluminación LED, DDR4 3200MHz, 32Gb/s M.2, HDMI, SATA 6Gb/s, USB 3.0",
     precioLista: 8900,
     efectivo: 7000,
-    foto: "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=529&useDensity=true&width=1366&height=625&tipoEscala=contain",
+    foto: "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=529&useDensity=true&width=1366&height=625&tipoEscala=contain"
   },
 
   {
@@ -44,7 +45,7 @@ const cards = [
       "Cumple con Intel ATX 12V V2.4.  Ventilador silencioso de 120 mm con capacidad PWM.  Salida de +12V de un solo canal.",
     precioLista: 6400,
     efectivo: 5000,
-    foto: "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=683&useDensity=true&width=1366&height=625&tipoEscala=contain",
+    foto: "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=683&useDensity=true&width=1366&height=625&tipoEscala=contain"
   },
 
   {
@@ -55,7 +56,7 @@ const cards = [
       "El Kumara es un teclado mecánico TKL súper aclamado, compacto y ampliamente funcional. Es virtualmente irrompible y tiene una durabilidad extraordinaria gracias a que su structura esá reforzada con acero.",
     precioLista: 10240,
     efecivo: 8000,
-    foto: "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=1765&useDensity=true&width=1366&height=625&tipoEscala=contain",
+    foto: "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=1765&useDensity=true&width=1366&height=625&tipoEscala=contain"
   },
 
   {
@@ -66,7 +67,7 @@ const cards = [
       "tipo de conexion SATA, tipo de disco solido, capacidad 240 gb, tasa de transferencia 6 GB",
     precioLista: 6000,
     efectivo: 4700,
-    foto: "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=71&useDensity=true&width=1366&height=625&tipoEscala=contain",
+    foto: "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=71&useDensity=true&width=1366&height=625&tipoEscala=contain"
   },
 
   {
@@ -77,7 +78,7 @@ const cards = [
       "capacidad 16 gb, velocidad 3600 Mhz,tipo ddr 4, cantidad de memorias 1 ",
     precioLista: 17900,
     efectivo: 14000,
-    foto: "http://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=1727&useDensity=true&idth136&height=625&tipoEscala=contain",
+    foto: "http://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=1727&useDensity=true&idth136&height=625&tipoEscala=contain"
   },
 
   {
@@ -88,7 +89,7 @@ const cards = [
       "teclado compacto e inalambrico. Mouse ambidiestro inalambrico",
     precioLista: 3473,
     efectivo: 2417,
-    foto: "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=733&useDensity=true&idth1366&heght=625&tipoEscala=contain",
+    foto: "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=733&useDensity=true&idth1366&heght=625&tipoEscala=contain"
   },
 
   {
@@ -99,7 +100,7 @@ const cards = [
       "Preparado para el gaming mas exigente, alta durabilidad y performance",
     precioLista: 4864,
     efectivo: 3800,
-    foto: "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=251&useDensity=true&idth1366&heght=625&tipoEscala=contain",
+    foto: "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=251&useDensity=true&idth1366&heght=625&tipoEscala=contain"
   },
 
   {
@@ -110,7 +111,7 @@ const cards = [
       "Dimensiónes 240 mm x 520 mm x 510 mm , 9,45 pulg. x 20,5 pulg. x 20,1 pulg. Chasis semitorre. materiales:Paneles de aluminio anodizado,Chasis de acero con recubrimiento en polvo. aneles laterles de vidrio templado",
     precioLista: 44800,
     efecivo: 5000,
-    foto: "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=769&useDensity=true&width=1366&height=625&tipoEscala=contain",
+    foto: "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=769&useDensity=true&width=1366&height=625&tipoEscala=contain"
   },
 
   {
@@ -120,7 +121,7 @@ const cards = [
     caracteristicas: "auriculares Gamers de alta fidelidad de sonido ",
     precioLista: 5000,
     efectivo: 4500,
-    foto: "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=2003&useDensity=true&idth1366&height=625&tipoEscala=contain",
+    foto: "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=2003&useDensity=true&idth1366&height=625&tipoEscala=contain"
   },
 
   {
@@ -131,7 +132,7 @@ const cards = [
       " webcam diseñada para crear y transmitir contenido de alta calidad desde casa",
     precioLista: 12000,
     efectivo: 11000,
-    foto: "http://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=1017&useDensity=true&idth136&height=625&tipoEscala=contain",
+    foto: "http://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=1017&useDensity=true&idth136&height=625&tipoEscala=contain"
   },
 
   {
@@ -142,7 +143,7 @@ const cards = [
       "lo tiene todo: teclas macro dedicadas, memoria interna,  switches ópticos, iluminación lateral",
     precioLista: 3800,
     efectivo: 3000,
-    foto: "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=1045&useDensity=true&width=1366&height=625&tipoEscala=contain",
+    foto: "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=1045&useDensity=true&width=1366&height=625&tipoEscala=contain"
   },
 
   {
@@ -153,7 +154,7 @@ const cards = [
       "El Impact es un ratón gamer que rinde perfectamente bien en cualquier tipo de juegos",
     precioLista: 9600,
     efectivo: 5600,
-    foto: "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=1269&useDensity=true&width=1366&height=625&tipoEscala=contain",
+    foto: "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=1269&useDensity=true&width=1366&height=625&tipoEscala=contain"
   },
 
   {
@@ -164,7 +165,7 @@ const cards = [
       "Más ágil, más rápido y más preciso que los demás, el elite está concebido para ser el mejor",
     preioLista: 4500,
     efecivo: 3800,
-    foto: "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=1755&useDensity=true&width=1366&height=625&tipoEscala=contain",
+    foto: "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=1755&useDensity=true&width=1366&height=625&tipoEscala=contain"
   },
 
   {
@@ -174,7 +175,7 @@ const cards = [
     caracteristicas: "Adaptador USB de Alta Ganancia y Doble Banda AC1900",
     precioLista: 6400,
     efectivo: 5000,
-    foto: "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=631&useDensity=true&idth1366&height=625&tipoEscala=contain",
+    foto: "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=631&useDensity=true&idth1366&height=625&tipoEscala=contain"
   },
 
   {
@@ -185,7 +186,7 @@ const cards = [
       "El Nyx1200-AC es la nueva generación de Routers inalámbricos AC de doble banda ",
     precioLista: 3726,
     efectivo: 3000,
-    foto: "http://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=1359&useDensity=true&idth136&height=625&tipoEscala=contain",
+    foto: "http://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=1359&useDensity=true&idth136&height=625&tipoEscala=contain"
   },
 
   {
@@ -195,7 +196,7 @@ const cards = [
     caracteristicas: "8GB , 2666 Mgz, DDR4",
     precioLista: 8700,
     efectivo: 7200,
-    foto: "http://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=661&useDensity=true&idth136&height=625&tipoEscala=contain",
+    foto: "http://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=661&useDensity=true&idth136&height=625&tipoEscala=contain"
   },
 
   {
@@ -205,7 +206,7 @@ const cards = [
     caracteristicas: "8 GB, 3000 Mgz, DDR4",
     precioLista: 8832,
     efectivo: 6900,
-    foto: "http://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=1869&useDensity=true&idth136&height=625&tipoEscala=contain",
+    foto: "http://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=1869&useDensity=true&idth136&height=625&tipoEscala=contain"
   },
 
   {
@@ -216,7 +217,7 @@ const cards = [
       "está certificadacon 80 plus bronce coneficiencia eléctrica de hasta 85% que permiteuna menor generación de calorymenor costo operativo",
     precioLista: 8300,
     efectivo: 6500,
-    foto: "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=669&useDensity=true&width=1366&height=625&tipoEscala=contain",
+    foto: "https://ss-static-01.esmsv.com/id/115190/productos/obtenerimagen/?id=669&useDensity=true&width=1366&height=625&tipoEscala=contain"
   },
 ];
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import Tarjeta from './Tarjeta'
+import Tarjeta1 from './Tarjeta1'
 
 
 const ProductosDestacados = () => {
@@ -16,7 +17,7 @@ const ProductosDestacados = () => {
     </div>
     <div className='flex justify-evenly flex-wrap'>
        <Tarjeta/>
-       <Tarjeta/>
+       <Tarjeta1/>
     </div>
     </div>
   )

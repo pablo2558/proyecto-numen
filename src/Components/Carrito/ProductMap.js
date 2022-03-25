@@ -5,10 +5,9 @@ import { CartContainer } from './ShoppingCart';
 const ProductMap = () => {
     const {products, addToCart} = useContext(CartContainer)
   return (
-    <div>
-      <h2>Carritos de compras</h2>
+    <div className=''>
       <h3>Productos</h3>
-      <div>
+      <div className='flex justify-evenly flex-wrap'>
         {products.map((product) => (
           <Product key={product.id} data={product} addToCart={addToCart} />
         ))}

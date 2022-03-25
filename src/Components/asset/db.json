@@ -3,47 +3,33 @@
     {
       "id": 1,
       "name": "Producto A",
-      "price": 10
-    },
-    {
-      "id": 2,
-      "name": "Producto B",
-      "price": 50
-    },
-    {
-      "id": 3,
-      "name": "Producto C",
-      "price": 100
-    },
-    {
-      "id": 4,
-      "name": "Producto D",
-      "price": 150
-    },
-    {
-      "id": 5,
-      "name": "Producto E",
-      "price": 200
-    }
-  ],
-  "cart": [
-    {
-      "id": 3,
-      "name": "Producto C",
-      "price": 100,
-      "quantity": 1
+      "price": 10,
+      "imagen": ""
     },
     {
       "id": 2,
       "name": "Producto B",
       "price": 50,
-      "quantity": 1
+      "imagen": ""
     },
     {
-      "id": 1,
-      "name": "Producto A",
-      "price": 10,
-      "quantity": 1
+      "id": 3,
+      "name": "Producto C",
+      "price": 100,
+      "imagen": ""
+    },
+    {
+      "id": 4,
+      "name": "Producto D",
+      "price": 150,
+      "imagen": ""
+    },
+    {
+      "id": 5,
+      "name": "Producto E",
+      "price": 200,
+      "imagen": ""
     }
-  ]
+  ],
+  "cart": []
 }
