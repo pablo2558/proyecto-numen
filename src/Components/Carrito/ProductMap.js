@@ -6,7 +6,6 @@ const ProductMap = () => {
     const {products, addToCart} = useContext(CartContainer)
   return (
     <div className=''>
-      <h3>Productos</h3>
       <div className='flex justify-evenly flex-wrap'>
         {products.map((product) => (
           <Product key={product.id} data={product} addToCart={addToCart} />

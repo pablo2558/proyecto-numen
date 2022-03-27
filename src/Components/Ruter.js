@@ -7,7 +7,7 @@ import Porductos from './Productos/Porductos'
 
 const Ruter = () => {
   return (
-    <div>
+    <div className=''>
       <Router>
           <NavBar/>
           <Routes>

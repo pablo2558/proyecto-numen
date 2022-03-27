@@ -6,7 +6,7 @@ import Ruter from './Components/Ruter';
 
 function App() {
   return (
-    <div>
+    <div className='dark:bg-slate-900'>
        <ShoppingCart>
           <Ruter/>
        </ShoppingCart>

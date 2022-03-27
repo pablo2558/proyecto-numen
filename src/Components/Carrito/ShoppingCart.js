@@ -27,7 +27,6 @@ const ShoppingCart = ({children}) => {
     
 
     const addToCart = async (data) => {
-
       let newItem = state.products.find(product => product.id === data.id)
 
       let itemInCart = state.cart.find((item) => item.id === newItem.id)

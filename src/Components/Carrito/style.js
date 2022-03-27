@@ -1,1 +1,1 @@
-export const Style_Table = "border-x-4 border-y-4"
+export const Style_Table = "border-x-2 border-y-4 text-slate-100 "

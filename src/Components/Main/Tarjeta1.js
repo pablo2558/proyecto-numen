@@ -12,7 +12,6 @@ const Tarjeta1 = () => {
           </a>
           <ul>
             <li className="text-green-600 text-sm font-light pt-4">En Stock</li>
-            <li className="text-white text-lg font-light pt-6">LISTA $ </li>
             <li className="text-white text-lg font-light pt-6">
               PRECIO CONTADO $32.000
             </li>
