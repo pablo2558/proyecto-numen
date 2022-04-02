@@ -8,11 +8,12 @@ const Ruter = () => {
   return (
     <div>
       <Router>
-          <NavBar/>
+          <NavBar />
           <Routes>
               <Route path='/' element={<Body/>}/>
               <Route path='Productos' element={<Porductos/>}/>
           </Routes>
+          
       </Router>
     </div>
   )

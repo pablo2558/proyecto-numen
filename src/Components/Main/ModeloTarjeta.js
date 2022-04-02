@@ -6,7 +6,7 @@ const ModeloTarjeta = () => {
       <figure className="rounded-lg border-orange-600 border-4 bg-black ">
         <img src="https://as01.epimg.net/showroom/imagenes/2018/08/30/portada/1535654183_505131_1535661107_sumario_normal.jpg" alt="imagen" />
         <div>
-          <a href="#" className="text-orange-700 text-xl font-bold pt-6">
+          <a href="#"className="text-orange-700 text-xl font-bold pt-6">
             Gabinete Phanteks Enthoo Evolv
           </a>
           <ul>
