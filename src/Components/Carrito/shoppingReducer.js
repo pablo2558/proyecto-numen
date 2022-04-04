@@ -11,6 +11,7 @@ export function shoppingReducer(state, action) {
           return {
             ...state,
             products: action.payload[0],
+            redragon: action.payload[2],
             cart: action.payload[1]
           }
         }
