@@ -6,14 +6,14 @@ import * as style from "./style";
 const NavBar = () => {
     const [Open, setOpen] = useState(false);
     return (
-        <div className="flex items-center justify-between border-b border-gray-400 py-2 bg-black fixed w-screen">
-          <a href="https://cvws.icloud-content.com/B/AddnqMrGpC1TT9g_qfmiWlCIILCtAbTIQK73xKZJzMaDxkK4E4WnDLKP/logo4.jpg?o=AvHUUqd0TOKqoXa7KhVEzwYDPanBJLOD-kNnFu8r_axS&v=1&x=3&a=CAogubjzMwU-EJodUpvbzHAgU42oh3UKGFhtgY29sj8BATMSbxCzjPn_9i8Y04OwgPcvIgEAUgSIILCtWgSnDLKPaie0N5ObWYz-qxH0gTIkcsdHg9C0M_8kZ1Caoh_ffuFZ5f4ffoVtbg9yJ__-SdLB_rE_r_zd708aQcdbxilZMT5AKjerYS4XboV4GXtbB98Ewg&e=1646852309&fl=&r=dcd00976-74e7-47eb-a2eb-280030e23a8e-1&k=tV0Dwus1CH7O2K8_-w1Myw&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=46&s=Cfzzip6a8667Hp5WA6aXaPsM73Q&cd=i">
-            <img src="https://cvws.icloud-content.com/B/AddnqMrGpC1TT9g_qfmiWlCIILCtAbTIQK73xKZJzMaDxkK4E4WnDLKP/logo4.jpg?o=AvHUUqd0TOKqoXa7KhVEzwYDPanBJLOD-kNnFu8r_axS&v=1&x=3&a=CAogubjzMwU-EJodUpvbzHAgU42oh3UKGFhtgY29sj8BATMSbxCzjPn_9i8Y04OwgPcvIgEAUgSIILCtWgSnDLKPaie0N5ObWYz-qxH0gTIkcsdHg9C0M_8kZ1Caoh_ffuFZ5f4ffoVtbg9yJ__-SdLB_rE_r_zd708aQcdbxilZMT5AKjerYS4XboV4GXtbB98Ewg&e=1646852309&fl=&r=dcd00976-74e7-47eb-a2eb-280030e23a8e-1&k=tV0Dwus1CH7O2K8_-w1Myw&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=46&s=Cfzzip6a8667Hp5WA6aXaPsM73Q&cd=i" alt="logo" />
+        <div className="fixed flex items-center justify-between w-screen py-2 bg-black border-b border-gray-400">
+          <a href="https://cvws.icloud-content.com/B/AddnqMrGpC1TT9g_qfmiWlCIILCtAbTIQK73xKZJzMaDxkK4E4WnDLKP/logo4.jpg?o=AqxKVsNgkLSyJcytRrSw144pi6205Od20Ys6qgB5p3CG&v=1&x=3&a=CAogU3Q6F2WlqpPW5TD8LN92lTThFK1mOgFrd4ygRVGzs2ISbxCYkLTW_i8YuIfr1v4vIgEAUgSIILCtWgSnDLKPaidJbeXvsfbPmGkXTcFNSa8tSFU3l4gFLtMqBIeojlwUuVhhBb4OzZRyJ6KQ222jBkIT1hJUWFs6XQ3BgaURIxQAwA5wWKy9vDWHP8oNVCDQ5A&e=1648912679&fl=&r=4db5bdaf-3bc0-4ef2-b4bf-e7f1d209fef0-1&k=tV0Dwus1CH7O2K8_-w1Myw&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=46&s=54-skNqa3VMkomfi03asbZi4Jf8&cd=i">
+            <img src="https://cvws.icloud-content.com/B/AddnqMrGpC1TT9g_qfmiWlCIILCtAbTIQK73xKZJzMaDxkK4E4WnDLKP/logo4.jpg?o=AqxKVsNgkLSyJcytRrSw144pi6205Od20Ys6qgB5p3CG&v=1&x=3&a=CAogU3Q6F2WlqpPW5TD8LN92lTThFK1mOgFrd4ygRVGzs2ISbxCYkLTW_i8YuIfr1v4vIgEAUgSIILCtWgSnDLKPaidJbeXvsfbPmGkXTcFNSa8tSFU3l4gFLtMqBIeojlwUuVhhBb4OzZRyJ6KQ222jBkIT1hJUWFs6XQ3BgaURIxQAwA5wWKy9vDWHP8oNVCDQ5A&e=1648912679&fl=&r=4db5bdaf-3bc0-4ef2-b4bf-e7f1d209fef0-1&k=tV0Dwus1CH7O2K8_-w1Myw&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=46&s=54-skNqa3VMkomfi03asbZi4Jf8&cd=i" alt="logo" />
           </a>
           <nav className=''>
-            <section className="MOBILE-MENU flex lg:hidden">
+            <section className="flex MOBILE-MENU lg:hidden">
               <div
-                className="HAMBURGER-ICON space-y-2"
+                className="space-y-2 HAMBURGER-ICON"
                 onClick={() => setOpen((el) => !el)}
               >
                 <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
@@ -27,7 +27,7 @@ const NavBar = () => {
                   onClick={() => setOpen(false)}
                 >
                   <svg
-                    className="h-8 w-8 text-gray-600"
+                    className="w-8 h-8 text-gray-600"
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="currentColor"
@@ -62,7 +62,7 @@ const NavBar = () => {
               </div>
             </section>
     
-            <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
+            <ul className="hidden space-x-8 DESKTOP-MENU lg:flex">
               <li className={style.NAVBAR_MOBILE}>
                 <Link to="/">INICIO</Link>
               </li>

@@ -4,6 +4,7 @@ import Body from './Body'
 import NavBar from './Header/NavBar'
 import Porductos from './Productos/Porductos'
 import Contacto from './Main/Contacto'
+import PreguntasF from './Main/PreguntasF'
 
 
 const Ruter = () => {
@@ -15,6 +16,7 @@ const Ruter = () => {
               <Route path='/' element={<Body/>}/>
               <Route path='Productos' element={<Porductos/>}/>
               <Route path='Contacto' element={<Contacto/>}/>
+              <Route path='PreguntasF' element={<PreguntasF/>}/>
           </Routes>
       </Router>
     </div>
