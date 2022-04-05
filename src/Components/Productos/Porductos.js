@@ -1,5 +1,5 @@
 import React from 'react'
-import ModeloTarjeta from '../Main/ModeloTarjeta'
+import ProductMap from '../Carrito/ProductMap'
 import { Barrita } from './style'
 
 const Porductos = () => {
@@ -20,10 +20,7 @@ const Porductos = () => {
             </ul>
         </div>
         <div className='flex justify-evenly flex-wrap'>
-          <ModeloTarjeta/>
-          <ModeloTarjeta/>
-          <ModeloTarjeta/>
-          <ModeloTarjeta/>
+          <ProductMap/>
         </div>
     </div>
   )
