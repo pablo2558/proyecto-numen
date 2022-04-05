@@ -6,7 +6,7 @@ import * as style from "./style";
 const NavBar = () => {
     const [Open, setOpen] = useState(false);
     return (
-        <div className="flex items-center justify-between border-b border-gray-400 py-2 bg-black fixed w-screen">
+        <div className="flex items-center justify-between border-b border-gray-400 py-2 bg-black fixed w-screen z-10 top-0 left-0">
           <a href="/">
             <img src="#" alt="logo" className='' />
           </a>
