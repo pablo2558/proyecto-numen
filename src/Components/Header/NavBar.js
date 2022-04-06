@@ -7,7 +7,7 @@ const NavBar = () => {
     const [Open, setOpen] = useState(false);
     return (
         <div className="fixed flex items-center justify-between w-screen py-2 bg-black border-b border-gray-400">
-          <a href="https://cvws.icloud-content.com/B/AddnqMrGpC1TT9g_qfmiWlCIILCtAbTIQK73xKZJzMaDxkK4E4WnDLKP/logo4.jpg?o=AqxKVsNgkLSyJcytRrSw144pi6205Od20Ys6qgB5p3CG&v=1&x=3&a=CAogU3Q6F2WlqpPW5TD8LN92lTThFK1mOgFrd4ygRVGzs2ISbxCYkLTW_i8YuIfr1v4vIgEAUgSIILCtWgSnDLKPaidJbeXvsfbPmGkXTcFNSa8tSFU3l4gFLtMqBIeojlwUuVhhBb4OzZRyJ6KQ222jBkIT1hJUWFs6XQ3BgaURIxQAwA5wWKy9vDWHP8oNVCDQ5A&e=1648912679&fl=&r=4db5bdaf-3bc0-4ef2-b4bf-e7f1d209fef0-1&k=tV0Dwus1CH7O2K8_-w1Myw&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=46&s=54-skNqa3VMkomfi03asbZi4Jf8&cd=i">
+          <a href="">
             <img src="https://cvws.icloud-content.com/B/AddnqMrGpC1TT9g_qfmiWlCIILCtAbTIQK73xKZJzMaDxkK4E4WnDLKP/logo4.jpg?o=AqxKVsNgkLSyJcytRrSw144pi6205Od20Ys6qgB5p3CG&v=1&x=3&a=CAogU3Q6F2WlqpPW5TD8LN92lTThFK1mOgFrd4ygRVGzs2ISbxCYkLTW_i8YuIfr1v4vIgEAUgSIILCtWgSnDLKPaidJbeXvsfbPmGkXTcFNSa8tSFU3l4gFLtMqBIeojlwUuVhhBb4OzZRyJ6KQ222jBkIT1hJUWFs6XQ3BgaURIxQAwA5wWKy9vDWHP8oNVCDQ5A&e=1648912679&fl=&r=4db5bdaf-3bc0-4ef2-b4bf-e7f1d209fef0-1&k=tV0Dwus1CH7O2K8_-w1Myw&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=46&s=54-skNqa3VMkomfi03asbZi4Jf8&cd=i" alt="logo" />
           </a>
           <nav className=''>
