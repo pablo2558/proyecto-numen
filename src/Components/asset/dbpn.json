@@ -237,26 +237,5 @@
       "foto": "/imagenes/Teclado Redragon Harpe PRO K503A-RGB.png"
     }
   ],
-  "cart": [
-    {
-      "id": 1,
-      "name": "disco WD blue 1TB 7200 RPM",
-      "stock": 5,
-      "caracteristicas": "coneccion Sata, disco mecanico, capacidad 1TB, tasa de transferenca 60 gb/s, velocidad 7200 rpm, memoria cache 64 mb, factor 35",
-      "price": 6700,
-      "efectivo": 5600,
-      "foto": "/Disco WD blue 1TB 7200RPM.png",
-      "quantity": 4
-    },
-    {
-      "id": 2,
-      "name": "ssd Gigabite 240 gb",
-      "stock": 10,
-      "caracteristicas": "Tipo de coneccion SATA, 240 GB , tasa de transferencia 6 GB/s, velocicad de lectura secuencial 500 MB/s",
-      "price": 6100,
-      "efectivo": 4800,
-      "foto": "/SSD Gigabyte 240GB.png",
-      "quantity": 1
-    }
-  ]
+  "cart": []
 }
