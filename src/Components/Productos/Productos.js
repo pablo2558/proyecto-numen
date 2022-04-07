@@ -2,7 +2,7 @@ import React from 'react'
 import ProductMap from '../Carrito/ProductMap'
 import { Barrita } from './style'
 
-const Porductos = () => {
+const Productos = () => {
   return (
     <div className='lg:pt-40 ml-6 lg:flex md:flex md:grid-cols-1'>
         <div className="" >
@@ -26,4 +26,4 @@ const Porductos = () => {
   )
 }
 
-export default Porductos
+export default Productos

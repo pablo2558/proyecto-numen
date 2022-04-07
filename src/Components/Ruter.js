@@ -4,7 +4,7 @@ import Body from './Body'
 import CartMap from './Carrito/CartMap'
 import RedragonMap from './Carrito/RedragonMap'
 import NavBar from './Header/NavBar'
-import Porductos from './Productos/Porductos'
+import Productos from './Productos/Productos'
 import Contacto from './Main/Contacto'
 import PreguntasF from './Main/PreguntasF'
 
@@ -16,7 +16,7 @@ const Ruter = () => {
           <NavBar />
           <Routes>
               <Route path='/' element={<Body/>}/>
-              <Route path='Productos' element={<Porductos/>}/>
+              <Route path='Productos' element={<Productos/>}/>
               <Route path='Contacto' element={<Contacto/>}/>
               <Route path='PreguntasF' element={<PreguntasF/>}/>
               <Route path='Redragon' element={<RedragonMap/>}/>
