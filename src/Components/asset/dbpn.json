@@ -237,5 +237,36 @@
       "foto": "/imagenes/Teclado Redragon Harpe PRO K503A-RGB.png"
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": 2,
+      "name": "ssd Gigabite 240 gb",
+      "stock": 10,
+      "caracteristicas": "Tipo de coneccion SATA, 240 GB , tasa de transferencia 6 GB/s, velocicad de lectura secuencial 500 MB/s",
+      "price": 6100,
+      "efectivo": 4800,
+      "foto": "/SSD Gigabyte 240GB.png",
+      "quantity": 2
+    },
+    {
+      "id": 3,
+      "name": "Motherboard ASUS Prime A320M-K",
+      "stock": 6,
+      "caracteristicas": "Tarjeta madre AMD AM4 uATX con iluminación LED, DDR4 3200MHz, 32Gb/s M.2, HDMI, SATA 6Gb/s, USB 3.0",
+      "price": 8900,
+      "efectivo": 7000,
+      "foto": "/Motherboard ASUS Prime A320M-K.png",
+      "quantity": 1
+    },
+    {
+      "id": 4,
+      "name": "Fuente Deepcool DE600",
+      "stock": 4,
+      "caracteristicas": "Cumple con Intel ATX 12V V2.4.  Ventilador silencioso de 120 mm con capacidad PWM.  Salida de +12V de un solo canal.",
+      "price": 6400,
+      "efectivo": 5000,
+      "foto": "/Fuente Deepcool DE600.png",
+      "quantity": 1
+    }
+  ]
 }

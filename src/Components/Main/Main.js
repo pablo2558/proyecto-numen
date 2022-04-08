@@ -1,6 +1,5 @@
 import React from 'react'
 import App from '../carousel/App';
-import Footer from '../Footer/Footer';
 import Descripcion from './Descripcion';
 import OfertaProducto from './OfertaProducto';
 import ProductosDestacados from './ProductosDestacados';
@@ -25,7 +24,6 @@ const Main = () => {
       <OfertaProducto/>
       <ProductosDestacados/>
       <Servicios/>
-      <Footer />
     </div>
   );
 }

@@ -8,7 +8,7 @@ const NavBar = () => {
     const [Open, setOpen] = useState(false);
     return (
       <div className="flex items-center justify-between border-b border-gray-400 py-2 bg-black fixed w-screen z-10 left-0 top-0">
-        <a className="flex items-center h-36 w-36 ml-12" href="/">
+        <a className="flex items-center h-32 w-32 " href="/">
           <img src={Logo} alt="logo" className="" />
           <h3 className="text-orange-700 text-2xl font-bold">TecnoShop</h3>
         </a>
@@ -52,7 +52,7 @@ const NavBar = () => {
                   <Link to="Redragon">REDRAGON</Link>
                 </li>
                 <li className={style.NAVBAR_INTEMS}>
-                  <a href="#">OFERTA DEL DIA</a>
+                  <Link to="ComoComprar">COMO COMPRAR</Link>
                 </li>
                 <li className={style.NAVBAR_INTEMS}>
                   <Link to="Contacto">CONTACTO</Link>
@@ -89,10 +89,10 @@ const NavBar = () => {
               <Link to="Redragon">REDRAGON</Link>
             </li>
             <li className={style.NAVBAR_MOBILE}>
-              <a href="#">OFERTA DEL DIA</a>
+              <Link to="ComoComprar">COMO COMPRAR</Link>
             </li>
             <li className={style.NAVBAR_MOBILE}>
-              <a href="Contacto">CONTACTO</a>
+            <Link to="Contacto">CONTACTO</Link>
             </li>
             <li className={style.NAVBAR_MOBILE}>
               <Link to="Carrito">
