@@ -2,7 +2,7 @@ import React from 'react'
 
 const Descripcion = () => {
   return (
-    <div className="bg-gray-800 p-10 lg:h-80 grid lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 flex items-center">
+    <div className="bg-gray-800 p-10 lg:h-80 lg:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 flex items-center">
       <p className="text-white text-lg p-6">
         Somos una tienda de tecnología especializada en el armado e instalación
         de PC. Nos dedicamos además a la venta de insumos informáticos y de
