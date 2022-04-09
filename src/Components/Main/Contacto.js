@@ -4,7 +4,7 @@ import React from "react";
 const Contacto = () => {
   return (
     <div className="flex items-center justify-center min-h-screen bg-orange-600">
-      <div className="w-2/3 p-20 mt-12 mb-10 bg-gray-800 rounded shadow-2xl">
+      <div className="sm:w-2/3 p-20 mt-12 mb-10 bg-gray-800 rounded shadow-2xl">
         <h2 className="mt-10 mb-5 text-3xl font-bold text-gray-200">
         Formulario de Contacto
         </h2>

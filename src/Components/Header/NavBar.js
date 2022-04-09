@@ -6,14 +6,15 @@ import Logo from "../asset/Imagenes/logoTecno.jpg";
 
 const NavBar = () => {
     const [Open, setOpen] = useState(false);
+
     return (
       <div className="flex items-center justify-between border-b border-gray-400 py-2 bg-black fixed w-screen z-10 left-0 top-0">
-        <a className="flex items-center h-36 w-36 ml-12" href="/">
+        <a className="flex items-center h-36 w-36 ml-2" href="/">
           <img src={Logo} alt="logo" className="" />
           <h3 className="text-orange-700 text-2xl font-bold">TecnoShop</h3>
         </a>
         <nav className="">
-          <section className="MOBILE-MENU flex lg:hidden">
+          <section className="MOBILE-MENU flex mr-8 lg:hidden">
             <div
               className="HAMBURGER-ICON space-y-2"
               onClick={() => setOpen((el) => !el)}
@@ -41,7 +42,7 @@ const NavBar = () => {
                   <line x1="6" y1="6" x2="18" y2="18" />
                 </svg>
               </div>
-              <ul className="flex flex-col items-center justify-between min-h-[250px]">
+              <ul className="flex flex-col items-center justify-between min-h-[250px] ">
                 <li className={style.NAVBAR_INTEMS}>
                   <Link to="/">INICIO</Link>
                 </li>
@@ -61,8 +62,8 @@ const NavBar = () => {
                   <Link to="Carrito">
                   <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
+                  width="20"
+                  height="20"
                   fill="currentColor"
                   className="bi bi-cart"
                   viewBox="0 0 16 16"
@@ -71,14 +72,11 @@ const NavBar = () => {
                 </svg>
                   </Link>
                 </li>
-                <li className={style.BOTON_ACCESOCLIENTES}>
-                  <a href="#">ACCESO CLIENTES</a>
-                </li>
               </ul>
             </div>
           </section>
 
-          <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
+          <ul className="DESKTOP-MENU hidden space-x-8 lg:flex pr-16">
             <li className={style.NAVBAR_MOBILE}>
               <Link to="/">INICIO</Link>
             </li>
@@ -98,8 +96,8 @@ const NavBar = () => {
               <Link to="Carrito">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
+                  width="20"
+                  height="20"
                   fill="currentColor"
                   class="bi bi-cart"
                   viewBox="0 0 16 16"
@@ -107,9 +105,6 @@ const NavBar = () => {
                   <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
                 </svg>
               </Link>
-            </li>
-            <li className={style.BOTON_ACCESOCLIENTES1}>
-              <a href="#">ACCESO CLIENTES</a>
             </li>
           </ul>
         </nav>

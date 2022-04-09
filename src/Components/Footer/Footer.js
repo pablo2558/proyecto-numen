@@ -15,7 +15,7 @@ const Footer = () => {
                 <li><a href="/" className='hover:text-sky-600 transition duration-300 delay-150'>Inicio</a></li>
                 <li><a href="Productos" className='hover:text-sky-600 transition duration-300 delay-150'>Productos</a></li>
                 <li><a href="Redragon" className='hover:text-sky-600 transition duration-300 delay-150'>REDRAGON</a></li>
-                <li><a href="#" className='hover:text-sky-600 transition duration-300 delay-150'>Ofertas del Dia</a></li>
+                <li><a href="ComoComprar" className='hover:text-sky-600 transition duration-300 delay-150'>Como Comprar</a></li>
             </ul>
         </div>
         <div className='text-gray-200 text-lg flex justify-center items-center p-4'>

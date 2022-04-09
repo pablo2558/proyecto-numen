@@ -2,13 +2,13 @@ import React from "react";
 
 const PreguntasF = () => {
   return (
-    <div className="grid p-10 bg-gray-700 inset-1 lg:h-50 lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-1">
+    <div className="grid p-10 bg-gray-600 inset-1 lg:h-50 lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-1">
       <br></br>
       <br></br>
       <br></br>
       <br></br>
-      <p className="p-5 text-lg text-orange-500">PREGUNTAS FRECUENTES</p>
-      <p className="p-5 text-lg font-bold text-black">¿Como comprar?</p>
+      <p className="p-5 mt-8 text-2xl text-orange-700 font-bold">PREGUNTAS FRECUENTES</p>
+      <p className="p-5 text-lg font-bold text-zinc-900">¿Como comprar?</p>
       <p className="p-1 text-lg text-white">
         - Agregue al carrito los productos que desee, debera crear una cuenta para
         poder realizar la compra, luego, a la hora de comprar, tiene diferentes
@@ -19,7 +19,7 @@ const PreguntasF = () => {
         antes de realizar el pago ya que los combos suelen tener descuentos
         especiales!
       </p>
-      <p className="p-5 text-lg font-bold text-black">
+      <p className="p-5 text-lg font-bold text-zinc-900">
         ¿Qué medios de pago puedo utilizar?
         </p>
       <p className="p-3 text-lg text-white">
@@ -46,7 +46,7 @@ const PreguntasF = () => {
         realizar una transferencia bancaria a nuestro CBU, este medio de pago no
         tiene ningun interes y se toma el precio EFECTIVO.
       </p>
-      <p className="p-5 text-lg font-bold text-black">
+      <p className="p-5 text-lg font-bold text-zinc-900">
         ¿Cuales son los medios de entrega disponible?
       </p>
       <p className="p-1 text-lg text-white">
