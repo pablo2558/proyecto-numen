@@ -9,7 +9,7 @@ const CartMap = () => {
 
     const total =  cart?.reduce((previus, current) => previus + current.quantity * current.price, 0);
   return (
-    <div className="lg:pt-40 border border-solid">
+    <div className="lg:pt-40 md:pt-40 sm:pt-40 pt-40 border border-solid">
       <div>
         {cart.length === 0 ? (
           <p className="text-slate-100 text-xl">NO HAY ITEMS EN TU CARRO DE COMPRAS <br/>

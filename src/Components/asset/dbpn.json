@@ -247,6 +247,16 @@
       "efectivo": 7000,
       "foto": "/Motherboard ASUS Prime A320M-K.png",
       "quantity": 2
+    },
+    {
+      "id": 2,
+      "name": "ssd Gigabite 240 gb",
+      "stock": 10,
+      "caracteristicas": "Tipo de coneccion SATA, 240 GB , tasa de transferencia 6 GB/s, velocicad de lectura secuencial 500 MB/s",
+      "price": 6100,
+      "efectivo": 4800,
+      "foto": "/SSD Gigabyte 240GB.png",
+      "quantity": 2
     }
   ]
 }
