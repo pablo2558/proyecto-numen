@@ -1,11 +1,20 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useContext } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import * as style from "./style";
 import Logo from "../asset/Imagenes/logoTecno.jpg";
+import { CartContainer } from '../Carrito/ShoppingCart';
+import { BsFillCartCheckFill } from "react-icons/bs";
 
 const NavBar = () => {
     const [Open, setOpen] = useState(false);
+    const [productsLength, setProductsLength] = useState(0);
+    const {cart} = useContext(CartContainer)
+    useEffect(() => {
+      setProductsLength(
+        cart?.reduce((previous, current) => previous + current.quantity, 0)
+      );
+    }, [cart]);
 
     return (
       <div className="flex items-center justify-between border-b border-gray-400 py-2 bg-black fixed w-screen z-10 left-0 top-0">
@@ -60,16 +69,10 @@ const NavBar = () => {
                 </li>
                 <li className={style.NAVBAR_INTEMS}>
                   <Link to="Carrito">
-                  <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  className="bi bi-cart"
-                  viewBox="0 0 16 16"
-                >
-                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-                </svg>
+                   <div>
+                     <BsFillCartCheckFill/>
+                  </div>
+                  <div>{productsLength}</div>
                   </Link>
                 </li>
               </ul>
@@ -94,16 +97,10 @@ const NavBar = () => {
             </li>
             <li className={style.NAVBAR_MOBILE}>
               <Link to="Carrito">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  class="bi bi-cart"
-                  viewBox="0 0 16 16"
-                >
-                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-                </svg>
+                <div>
+                  <BsFillCartCheckFill/>
+                </div>
+                <div>{productsLength}</div>
               </Link>
             </li>
           </ul>
