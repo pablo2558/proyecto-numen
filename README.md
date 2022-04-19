@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) en el puerto 3001, luego de levantar la api de axios en el puerto 3000 como  json-server --watch src/Components/asset/dbpn.json
+Este proyecto se inicio con [Create React App](https://github.com/facebook/create-react-app) en el puerto 3001, luego de levantar la api de axios en el puerto 3000 como  json-server --watch src/Components/asset/dbpn.json
 ## Available Scripts
 
 In the project directory, you can run:
