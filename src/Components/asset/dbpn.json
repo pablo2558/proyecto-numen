@@ -235,5 +235,13 @@
       "foto": "/imagenes/Teclado Redragon Harpe PRO K503A-RGB.png"
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": 25,
+      "name": "Teclado Mecanico Redragon YAMA White K550",
+      "price": 8000,
+      "foto": "/imagenes/Teclado Mecanico Redragon YAMA White K550.png",
+      "quantity": 3
+    }
+  ]
 }

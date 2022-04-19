@@ -5,7 +5,7 @@ import { useContext } from 'react';
 
 
 const CartMap = () => {
-    const {cart, deleteFromCart, clearCart} = useContext(CartContainer)
+    const {cart, deleteFromCart, clearCart, addToCart} = useContext(CartContainer)
 
     const total =  cart?.reduce((previus, current) => previus + current.quantity * current.price, 0);
   return (
@@ -21,6 +21,7 @@ const CartMap = () => {
                 key={index}
                 data={item}
                 deleteFromCart={deleteFromCart}
+                addToCart={addToCart}
               />
             ))}
           </div>
